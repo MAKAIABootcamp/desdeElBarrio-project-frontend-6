@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import NavRoutes from './routes/NavRoutes.jsx';
+import {BrowserRouter} from "react-router-dom";
+import './main.scss';
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <div><h1>Demo Day</h1></div>
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <NavRoutes /> 
+  </BrowserRouter>
+);

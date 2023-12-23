@@ -1,0 +1,36 @@
+.nav-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 7px solid;
+    background-color: black;
+    align-items: center;
+    padding: 5px 40px;
+
+    img{
+        width: 10%;
+    }
+    .loginIcon-container{
+        img{
+            cursor: pointer;
+            width: 120%,
+        }
+    }
+       .NavBar__link{
+            text-decoration: solid;
+            color: white;
+            font-family: roboto;
+            font-weight: bold;
+        }
+    
+   .apoyanos-container{
+    border: 1px solid;
+    background-color: #F17408;
+    border-radius: 37px;
+    padding: 10px 20px;
+
+   } 
+        
+
+}

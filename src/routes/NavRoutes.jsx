@@ -16,6 +16,8 @@ export const NavRoutes = () => {
                 <Route path='Login' element={<Login/>} />
                 <Route path='home' element={<Home/>} />
                 <Route path='Apoyanos' element={<Apoyanos/>} />
+                
+                
                
             </Route>
         </Routes>

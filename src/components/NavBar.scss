@@ -6,7 +6,7 @@
     border: 7px solid;
     background-color: black;
     align-items: center;
-    padding: 5px 40px;
+    padding: 5px 60px;
 
     img{
         width: 10%;
@@ -21,16 +21,31 @@
             text-decoration: solid;
             color: white;
             font-family: roboto;
-            font-weight: bold;
+            font-weight: bold; 
+            
         }
-    
+        .NavBar__link:hover{
+            color: #F17408;
+        }
    .apoyanos-container{
     border: 1px solid;
     background-color: #F17408;
     border-radius: 37px;
     padding: 10px 20px;
 
+    :hover{
+        color: black;
+    }
+
    } 
-        
+   .center-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+
+   }
+
 
 }

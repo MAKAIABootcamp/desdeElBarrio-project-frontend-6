@@ -9,9 +9,6 @@ import Eventos from '../pages/novedades/Eventos';
 import Talleres from '../pages/novedades/Talleres';
 import Noticias from '../pages/novedades/Noticias';
 
-
-
-
 export const NavRoutes = () => {
     return (
       <>

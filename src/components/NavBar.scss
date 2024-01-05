@@ -34,3 +34,37 @@
         
 
 }
+/* Estilos para el menú desplegable */
+.novedades-container {
+    position: relative;
+    color: white; 
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .novedades-container .novedades-menu {
+    position: absolute;
+    top: 100%; /* Posición debajo del elemento padre */
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .novedades-container:hover .novedades-menu {
+    display: flex; /* Mostrar el menú al pasar el ratón sobre el contenedor */
+  }
+  
+  .novedades-container .novedades-menu .NavBar__link {
+    text-decoration: none;
+    color: white; /* Color del texto enlaces del menú */
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  .novedades-container .novedades-menu .NavBar__link:hover {
+    text-decoration: underline; /* Subrayar enlace al pasar el ratón */
+  }
+  

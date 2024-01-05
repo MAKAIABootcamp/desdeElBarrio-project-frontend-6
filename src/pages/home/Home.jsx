@@ -23,6 +23,7 @@ const Home = () => {
           <div className='lineas-container'>
           <img id='background-image' src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1704246039/IMG_2043_pfryiy.jpg " alt="" />
           <h1>Líneas de trabajo</h1>
+          <div className='containers-lineas'>
           <div className='talleres-container'>
             <h2>Talleres formativos</h2>
             <p>Ofrecemos una amplia gama de talleres formativos, que abarcan disciplinas como danza, circo, canto, graffiti y otras expresiones artísticas, proporcionando oportunidades valiosas para el desarrollo creativo y personal de los participantes. </p>
@@ -38,6 +39,7 @@ const Home = () => {
             <p>Desde el Barrio impulsa proyectos con un impacto tangible. Trabajamos proyectos educativos, ambientales, deportivos, sobre género y sexualidad.
               <br /> 
               Aportando a la comunidad diversos saberes y espacios para el desarrollo integro. </p>
+          </div>
           </div>
           </div>
           <div className='links-container'>
@@ -79,7 +81,7 @@ const Home = () => {
               </div>
               <div className='email'>
                 <h3>Correo</h3>
-                <h4>desdeelbarrio@correo.co</h4>
+                <h4>desdeelbarriocol@gmail.com</h4>
               </div>
               </div>
             </div>

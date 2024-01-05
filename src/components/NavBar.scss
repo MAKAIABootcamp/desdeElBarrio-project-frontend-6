@@ -49,3 +49,58 @@
 
 
 }
+
+@media screen and (max-width: 600px) {
+    .nav-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 7px solid;
+        background-color: black;
+        align-items: center;
+        padding: 5px 60px;
+        width: 100%
+    
+        img{
+            width: 10%;
+        }
+        .loginIcon-container{
+            img{
+                cursor: pointer;
+                width: 120%,
+            }
+        }
+           .NavBar__link{
+                text-decoration: solid;
+                color: white;
+                font-family: roboto;
+                font-weight: bold; 
+                
+            }
+            .NavBar__link:hover{
+                color: #F17408;
+            }
+       .apoyanos-container{
+        border: 1px solid;
+        background-color: #F17408;
+        border-radius: 37px;
+        padding: 10px 20px;
+    
+        :hover{
+            color: black;
+        }
+    
+       } 
+       .center-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    
+    
+       }
+    
+    
+    }
+}

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import './NavBar.scss';
-import "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-
-
 
 
 const NavBar = () => {

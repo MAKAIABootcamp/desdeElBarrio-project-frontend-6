@@ -1,7 +1,7 @@
 import React from "react";
 import "./Style.scss"
 
-export const SeccinContacto = () => {
+export const Contacto = () => {
   return (
     <div className="seccin-contacto">
       <div className="div">
@@ -53,3 +53,5 @@ export const SeccinContacto = () => {
     </div>
   );
 };
+
+export default Contacto

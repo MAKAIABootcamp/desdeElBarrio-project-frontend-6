@@ -9,6 +9,7 @@ import Eventos from '../pages/novedades/Eventos';
 import Talleres from '../pages/novedades/Talleres';
 import Noticias from '../pages/novedades/Noticias';
 import History from '../pages/history/History';
+import Contacto from '../pages/contact/Contacto';
 
 
 export const NavRoutes = () => {
@@ -24,7 +25,7 @@ export const NavRoutes = () => {
                 <Route path='Talleres' element={<Talleres/>} />
                 <Route path='Noticias' element={<Noticias/>} />
                 <Route path='History' element={<History/>} />
-               
+                <Route path='Contacto' element={<Contacto/>} />
             </Route>
         </Routes>
       </>

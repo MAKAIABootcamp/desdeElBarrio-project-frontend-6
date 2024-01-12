@@ -29,10 +29,10 @@ const NavBar = () => {
             )}
           </div>
           <div className='historia-container'>
-            <Link className='NavBar__link' to="/Login">Historia</Link>
+            <Link className='NavBar__link' to="/History">Historia</Link>
           </div>
           <div className='contacto-container'>
-            <Link className='NavBar__link' to="/Login">Contacto</Link>
+            <Link className='NavBar__link' to="/Contacto">Contacto</Link>
           </div>
           <div className='apoyanos-container'>
             <Link className='NavBar__link' to="/Apoyanos">Apóyanos</Link>

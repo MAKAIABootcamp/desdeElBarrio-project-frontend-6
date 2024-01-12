@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './NavBar.scss';
+import Footer from '../footer/footer';
 
 
 const NavBar = () => {
@@ -45,6 +46,7 @@ const NavBar = () => {
         </div>
       </nav>
       <Outlet />
+      <Footer/>
     </>
   );
 };

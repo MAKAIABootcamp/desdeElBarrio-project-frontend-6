@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 import Home from '../pages/home/Home';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar/NavBar';
 import Apoyanos from '../pages/apoyanos/Apoyanos';
 import Login from '../pages/login/Login';
 import Eventos from '../pages/novedades/Eventos';

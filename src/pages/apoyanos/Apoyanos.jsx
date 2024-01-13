@@ -16,11 +16,11 @@ const Apoyanos = () => {
   });
 
   const [libroData, setLibroData] = useState({
-    libro_titulo: ''
+    titulo: ''
   });
 
   const [jugueteData, setJugueteData] = useState({
-    juguetes_descripcion: ''
+    descripcion: ''
   });
 
   const handleInputChange = (e) => {
@@ -76,13 +76,13 @@ const Apoyanos = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ libro_titulo: libroData.libro_titulo }),
+        body: JSON.stringify({ titulo: libroData.titulo }),
       });
 
       if (response.ok) {
         showDonationSuccessAlert('Libro');
         setLibroData({
-          libro_titulo: ''
+          titulo: ''
         });
       } else {
         throw new Error('Error al registrar el libro');
@@ -101,13 +101,13 @@ const Apoyanos = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ juguetes_descripcion: jugueteData.juguetes_descripcion }),
+        body: JSON.stringify({ descripcion: jugueteData.descripcion }),
       });
 
       if (response.ok) {
         showDonationSuccessAlert('Juguete');
         setJugueteData({
-          juguetes_descripcion: ''
+          descripcion: ''
         });
       } else {
         throw new Error('Error al registrar el juguete');
@@ -171,7 +171,7 @@ const Apoyanos = () => {
               <h3>Donación de Libros</h3>
               <form onSubmit={handleLibroSubmit} className="donacion-form">
                 <label htmlFor="libro-titulo">Título del Libro:</label>
-                <input type="text" id="libro-titulo" name="libro_titulo" value={libroData.libro_titulo} onChange={handleLibroInputChange} required />
+                <input type="text" id="libro-titulo" name="titulo" value={libroData.titulo} onChange={handleLibroInputChange} required />
                 <button type="submit">Donar</button>
               </form>
             </div>
@@ -180,7 +180,7 @@ const Apoyanos = () => {
               <h3>Donación de Juguetes</h3>
               <form onSubmit={handleJugueteSubmit} className="donacion-form">
                 <label htmlFor="juguetes-descripcion">Descripción del Juguete:</label>
-                <textarea id="juguetes-descripcion" name="juguetes_descripcion" value={jugueteData.juguetes_descripcion} onChange={handleJugueteInputChange} required></textarea>
+                <textarea id="juguetes-descripcion" name="descripcion" value={jugueteData.descripcion} onChange={handleJugueteInputChange} required></textarea>
                 <button type="submit">Donar</button>
               </form>
             </div>
@@ -194,17 +194,17 @@ const Apoyanos = () => {
               method="POST" 
               action="https://secure.payco.co/checkoutopen.php">
             
-              <input name="p_cust_id_cliente" type="hidden" value="1359385"/>
-              <input name="p_key" type="hidden" value="57c034f9770640c6c6ee5927a487c7ada42458bb"/>
+              <input name="p_cust_id_cliente" type="hidden" value="1359395"/>
+              <input name="p_key" type="hidden" value="675f910503f7dd39a6c999a37e7d8e7afb315404"/>
               <input name="p_id_factura" type="hidden" value=""/>
-              <input name="p_description" type="hidden" value="Donación"/>
-              <input name="p_detalle" type="hidden" value="Donación a la Corporación Cultural Desde el Barrio."/>
-              <input name="p_referencia" type="hidden" value="DBDON"/>
+              <input name="p_description" type="hidden" value="Donaciones"/>
+              <input name="p_detalle" type="hidden" value=""/>
+              <input name="p_referencia" type="hidden" value=""/>
               <input name="p_test_request" type="hidden" value="false"/>
               <input name="p_url_respuesta" type="hidden" value=""/>
               <input name="p_url_confirmacion" type="hidden" value=""/>
               <input type="image" id="imagen" src="https://multimedia.epayco.co/dashboard/btns/btn5.png" alt=""/>
-              <input type="hidden" id="idboton" name="idboton" value="60843"/>
+              <input type="hidden" id="idboton" name="idboton" value="60844"/>
                                 
         </form>
               </form>

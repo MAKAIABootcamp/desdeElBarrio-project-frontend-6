@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/home/Home';
 import NavBar from '../components/NavBar';
 import Apoyanos from '../pages/apoyanos/Apoyanos';
-
+import AdminPanel from '../pages/adminPanel/AdminPanel';
 
 export const NavRoutes = () => {
     return (
@@ -14,7 +14,7 @@ export const NavRoutes = () => {
                 <Route index element={<Home/>} />
                 <Route path='home' element={<Home/>} />
                 <Route path='Apoyanos' element={<Apoyanos/>} />
-               
+                <Route path='Admin' element={<AdminPanel/>} />
             </Route>
         </Routes>
       </>

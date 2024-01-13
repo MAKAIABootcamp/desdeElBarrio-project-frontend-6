@@ -189,14 +189,24 @@ const Apoyanos = () => {
               <h3>Donación de Dinero</h3>
               <form action="#" method="post" className="donacion-form">
                 {/* DINERO */}
-                <label htmlFor="cantidad-dinero">Cantidad a Donar:</label>
-                <input type="number" id="cantidad-dinero" name="cantidad_dinero" required />
-                <label htmlFor="metodo-pago">Método de Pago:</label>
-                <select id="metodo-pago" name="metodo_pago" required>
-                  <option value="tarjeta">Tarjeta de Crédito</option>
-                  <option value="transferencia">Transferencia Bancaria</option>
-                </select>
-                <button type="submit">Donar</button>
+                <form id="frm_ePaycoCheckoutOpen" 
+              name="frm_ePaycoCheckoutOpen" 
+              method="POST" 
+              action="https://secure.payco.co/checkoutopen.php">
+            
+              <input name="p_cust_id_cliente" type="hidden" value="1359385"/>
+              <input name="p_key" type="hidden" value="57c034f9770640c6c6ee5927a487c7ada42458bb"/>
+              <input name="p_id_factura" type="hidden" value=""/>
+              <input name="p_description" type="hidden" value="Donación"/>
+              <input name="p_detalle" type="hidden" value="Donación a la Corporación Cultural Desde el Barrio."/>
+              <input name="p_referencia" type="hidden" value="DBDON"/>
+              <input name="p_test_request" type="hidden" value="false"/>
+              <input name="p_url_respuesta" type="hidden" value=""/>
+              <input name="p_url_confirmacion" type="hidden" value=""/>
+              <input type="image" id="imagen" src="https://multimedia.epayco.co/dashboard/btns/btn5.png" alt=""/>
+              <input type="hidden" id="idboton" name="idboton" value="60843"/>
+                                
+        </form>
               </form>
             </div>
           </div>

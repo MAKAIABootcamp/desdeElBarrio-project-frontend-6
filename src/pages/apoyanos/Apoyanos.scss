@@ -1,158 +1,158 @@
 body {
-    font-family: 'Lexend', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    background-color: orange;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .voluntario-section, .donacion-section {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .voluntario-section{
-    background: url('../../images/voluntariado.jpg') center center fixed; 
-    background-size: cover;
-    padding: 20px;
-   
+  background: url('../../images/voluntariado.jpg') center center fixed; 
+  background-size: cover;
+  padding: 20px;
+ 
 }
 
 button{
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 
 .voluntario-form, .donacion-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .voluntario-form label,
 .donacion-form label {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .donacion-options {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .donacion-option {
-    text-align: center;
-    width: 30%;
-    margin: 20px 0;
+  text-align: center;
+  width: 30%;
+  margin: 20px 0;
 }
 
 .donacion-option img {
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 button {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 button:hover {
-    background-color: #ff8c00;
+  background-color: #ff8c00;
 }
 
 hr {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 
 @media screen and (max-width: 600px) {
 
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-      
-        h2 {
-          font-size: 1.5rem;
-        }
-      
-        .voluntario-section,
-        .donacion-section {
-          padding: 20px 0;
-      
-          .voluntario-form,
-          .donacion-form {
-            label,
-            input,
-            textarea,
-            button,
-            select {
-              width: 100%;
-              margin-bottom: 10px;
-            }
-      
-            button {
-              font-size: 1rem;
-            }
+  .container {
+      max-width: 100%;
+      padding: 0 10px;
+    
+      h2 {
+        font-size: 1.5rem;
+      }
+    
+      .voluntario-section,
+      .donacion-section {
+        padding: 20px 0;
+    
+        .voluntario-form,
+        .donacion-form {
+          label,
+          input,
+          textarea,
+          button,
+          select {
+            width: 100%;
+            margin-bottom: 10px;
           }
-      
-          .donacion-options {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-direction: column;
-      
-            .donacion-option {
-              width: calc(100% - 20px);       
-              img {
-                max-width: 100%;
-                height: auto;
+    
+          button {
+            font-size: 1rem;
+          }
+        }
+    
+        .donacion-options {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: column;
+    
+          .donacion-option {
+            width: calc(100% - 20px);       
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+    
+            h3 {
+              margin-top: 10px;
+            }
+    
+            .donacion-form {
+              label,
+              input,
+              textarea,
+              button,
+              select {
+                width: 100%;
+                margin-bottom: 10px;
               }
-      
-              h3 {
-                margin-top: 10px;
-              }
-      
-              .donacion-form {
-                label,
-                input,
-                textarea,
-                button,
-                select {
-                  width: 100%;
-                  margin-bottom: 10px;
-                }
-      
-                button {
-                  font-size: 1rem;
-                }
+    
+              button {
+                font-size: 1rem;
               }
             }
           }
         }
       }
-  }
+    }
+}

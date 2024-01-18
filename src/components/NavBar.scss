@@ -18,7 +18,7 @@
         }
     }
        .NavBar__link{
-            text-decoration: solid;
+            text-decoration: none;
             color: white;
             font-family: roboto;
             font-weight: bold;
@@ -67,4 +67,74 @@
   .novedades-container .novedades-menu .NavBar__link:hover {
     text-decoration: underline; /* Subrayar enlace al pasar el ratón */
   }
+  .Navbar_mobile{
+    display: none;
+    
+  }
+
+  @media (max-width: 768px){
+  .NavBar__container{
+    display: none;
+    
+  }
+  .Navbar_mobile{
+    display: block;
+    background-color: #F17408;
+    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      img{
+        width: 55px;
+      }
+      ul{
+          display: flex;
+          width: 40%;
+          height: 33%;
+          position: absolute;
+          z-index: 10;
+          top: -16px;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.459);
+          flex-direction: column;
+          padding-top: 65px;
+          padding-left: 50px;
+          gap: 10px;
+          backdrop-filter: blur(10px);
+          transform: translateX(100%);
+          transition: transform 0.3s ease-in-out;
+          li{
+              list-style: none;
+              padding-block: 10px;
+              
+              a{
+                  text-decoration: none;
+                  color: white;
+                  font-size: 18px;
+              }
+          }
+      }
+  
+      .burger {
+        z-index: 11;
+        img{
+          width: 40px;
+        }
+      }
+    }
+    .nav.show {
+      ul{
+        transform: translateX(0);
+      }
+    }
+    .nav.hide {
+      ul {
+        display: none;
+        transform: translateX(100%);
+      }
+    }
+  }
+}
   

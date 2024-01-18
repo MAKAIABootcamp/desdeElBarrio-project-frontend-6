@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import Logo from '../images/logo.png'
+import burgerIcon from '../images/icon-hamburger.svg'
+import closeIcon from '../images/icon-close.svg'
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -8,6 +11,20 @@ const NavBar = () => {
   const toggleNovedades = () => {
     setMostrarNovedades(!mostrarNovedades);
   };
+
+  const [open,setOpen] = React.useState(false)
+  const [active,setActive] = React.useState(window.location.pathname.replace('/','')||'home')
+
+    const location = useLocation()
+    console.log(location)
+    function close() {
+        setOpen(false)
+    }
+
+    React.useEffect(() => {
+        setActive(location.pathname.replace('/','') ? location.pathname.replace('/','') : 'home')
+    },[location])
+
 
   return (
     <>
@@ -43,6 +60,35 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+
+      {/* Version para movile */}
+      <div className='Navbar_mobile'>
+      <nav className={`nav ${open ? 'show' : 'hide'}`}>
+                  <div className="logo">
+                      <img src={Logo} alt="logo" />
+                  </div>
+                  <ul className={active}>
+                      <li onClick={close}><Link to='/'>Inicio</Link></li>
+                      <li onClick={close}><Link to='/Eventos'>Eventos</Link></li>
+                      <li onClick={close}><Link to='/Talleres'>Talleres</Link></li>
+                      <li onClick={close}><Link to='/Noticias'>Noticias</Link></li>
+                      <li onClick={close}><Link to='/Login'>Historia</Link></li>
+                      <li onClick={close}><Link to='/Login'>Contacto</Link></li>
+                      <li onClick={close}><Link to='/Login'>Apoyanos</Link></li>
+                      <li onClick={close}><Link to='/Login'>Perfil</Link></li>
+                  </ul>
+                  <div onClick={()=>setOpen(!open)} className="burger">
+                      {
+                          open === false ?
+                          
+                              <img src={ burgerIcon } alt="" /> :
+                              <img src={ closeIcon } alt="" />
+                              
+                      }
+                  </div>
+              </nav>
+      </div>
+
       <Outlet />
     </>
   );

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Apoyanos.scss';
-import Swal from 'sweetalert2';
+import './Style.scss';
 import dinero from "../../images/dinero.jpg";
 import juguetes from "../../images/juguetes.jpg";
 import libros from "../../images/libros.jpg";
+//import Swal from 'sweetalert2';
 
 const Apoyanos = () => {
   const [formData, setFormData] = useState({

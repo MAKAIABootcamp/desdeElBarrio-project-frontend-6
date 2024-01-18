@@ -32,16 +32,9 @@ export const History = () => {
             la necesidad de abrir un espacio alternativo y con más eco que pudiese buscar otras formas de gestión de
             proyectos y construcción de procesos de colectivos juveniles
           </p>
-          <img className="line" alt="Line" src="https://c.animaapp.com/0sp9g4x4/img/line-7.svg" />
-          <img className="line-2" alt="Line" src="https://c.animaapp.com/0sp9g4x4/img/line-8.svg" />
-          <img className="line-3" alt="Line" src="https://c.animaapp.com/0sp9g4x4/img/line-9.svg" />
-          <img className="line-4" alt="Line" src="https://c.animaapp.com/0sp9g4x4/img/line-10.svg" />
-          
-          
-          <button className="Btn-portfolio">Portafolio</button>
-        </div>
-        
-        
+               
+          <button className="Btn-portfolio" href="./document/github-git-cheat-sheet.pdf" download={''}>Portafolio</button>
+        </div>   
       </div>
     </div>
   );

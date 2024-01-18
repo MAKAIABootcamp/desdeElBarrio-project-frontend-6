@@ -1,53 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Style.scss"
+import ViewMap from "../../components/Gmaps/ViewMap";
 
 export const Contacto = () => {
+  const [formInfo, setFormInfo] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+    setFormInfo({
+      ...formInfo,
+      [name]: value
+    });
+  };
+
+
+
   return (
-    <div className="seccin-contacto">
-      <div className="div">
-        <img className="image" alt="Image" src="image-120.png" />
-        <div className="text-wrapper">Inicio</div>
-        <div className="group">
-          <p className="copyright">
-            copyright corporacion desde eil barrio 2023&nbsp;&nbsp;aviso legal&nbsp;&nbsp;terminos y condiciones
-          </p>
-          <img className="img" alt="Image" src="image-184.png" />
-          <img className="image-2" alt="Image" src="image-188.png" />
-          <div className="peces-soctales">Redes sociales</div>
-          <div className="jeetono">Telefono</div>
-          <div className="text-wrapper-2">correo</div>
-        </div>
-        <img className="image-3" alt="Image" src="image-153.png" />
-        <div className="text-wrapper-3">Historia</div>
-        <div className="container">
-          <div className="apoyanos">Apoyános</div>
-        </div>
-        <div className="text-wrapper-4">Novedades</div>
-        <div className="frame">
-          <div className="overlap-group">
-            <div className="noticias">Información de Contacto</div>
-            <div className="telefono">Apellido</div>
-            <div className="text-wrapper-5">Nombre</div>
-            <button className="button">
-              <div className="btn-enviar">Enviar</div>
-            </button>
-            <div className="rectangle" />
-            <div className="rectangle-2" />
-            <div className="rectangle-3" />
-            <div className="rectangle-4" />
-            <img className="rectangle-5" alt="Rectangle" src="rectangle-10.svg" />
-            <div className="nombre">Correo</div>
-            <div className="nombre-2">Mensaje</div>
-            <div className="nombre-3">Teléfono</div>
-            <p className="p">
+    <div className="seccion-contacto">
+      <div className="seccion-contacto-wrapper">
+        <div className="seccion-contacto-text">
+          <h1>Informacion de contacto</h1>
+          <div className="seccion-contact-text2">
+            <p className="contact-p">
               ¿Inquietudes? No dude en contactarnos. Nuestros asesores están a su disposición ante cualquier sugerencia.{" "}
               <br />
               Puede hacerlo por cualquiera de los siguientes canales
             </p>
-            <div className="image-wrapper">
-              <img className="image-4" alt="Image" src="image-6.png" />
-            </div>
           </div>
+        </div>
+        <div className="seccion-contact-form">
+          <section className="contactForm">
+            <form className="contactData" >
+              <label htmlFor="nameF" className="text-wrapper-name">Nombre</label>
+              <input type="text" id="nameF" name="nameF" value={formInfo.name} onChange={handleChangeInput} required />
+
+              <label htmlFor="lastName" className="text-wrapper-lastName">Apellido</label>
+              <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+
+              <label htmlFor="email" className="text-wrapper-email">Correo</label>
+              <input type="email" id="email" name="email" value={formInfo.email} onChange={handleChangeInput} required />
+
+              <label htmlFor="text-wrapper-number">Teléfono</label>
+              <input type="tel" id="name" name="phone" value={formInfo.phone} onChange={handleChangeInput} required />
+
+              <label htmlFor="text-wrapper-message">Mensaje</label>
+              <textarea id="message" name="message" value={formInfo.message} onChange={handleChangeInput} required></textarea>
+              <div className="btnSubmit">
+                <button className="btnEnviar" type="submit">Enviar</button>
+              </div>
+            </form>
+          </section>
+
+          <section className="contactLocation">
+            <div className="contactMap">
+              <ViewMap />
+            </div>
+          </section>
+
         </div>
       </div>
     </div>

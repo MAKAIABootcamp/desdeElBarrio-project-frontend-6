@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import Logo from '../images/logo.png'
-import burgerIcon from '../images/icon-hamburger.svg'
-import closeIcon from '../images/icon-close.svg'
+import Logo from '../../images/logo.png'
+import burgerIcon from '../../images/icon-hamburger.svg'
+import closeIcon from '../../images/icon-close.svg'
 import './NavBar.scss';
+import Footer from '../footer/footer';
+
 
 const NavBar = () => {
   const [mostrarNovedades, setMostrarNovedades] = useState(false);
@@ -45,10 +47,10 @@ const NavBar = () => {
             )}
           </div>
           <div className='historia-container'>
-            <Link className='NavBar__link' to="/Login">Historia</Link>
+            <Link className='NavBar__link' to="/History">Historia</Link>
           </div>
           <div className='contacto-container'>
-            <Link className='NavBar__link' to="/Login">Contacto</Link>
+            <Link className='NavBar__link' to="/Contacto">Contacto</Link>
           </div>
           <div className='apoyanos-container'>
             <Link className='NavBar__link' to="/Apoyanos">Apóyanos</Link>
@@ -90,6 +92,7 @@ const NavBar = () => {
       </div>
 
       <Outlet />
+      <Footer/>
     </>
   );
 };

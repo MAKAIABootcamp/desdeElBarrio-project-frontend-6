@@ -13,6 +13,7 @@ import Contacto from '../pages/contact/Contacto';
 
 import AdminPanel from '../pages/adminPanel/AdminPanel';
 
+
 export const NavRoutes = () => {
     return (
       <>
@@ -27,7 +28,6 @@ export const NavRoutes = () => {
                 <Route path='Noticias' element={<Noticias/>} />
                 <Route path='History' element={<History/>} />
                 <Route path='Contacto' element={<Contacto/>} />
-                <Route path='Apoyanos' element={<Apoyanos/>} />
                 <Route path='Admin' element={<AdminPanel/>} />
             </Route>
         </Routes>

@@ -103,7 +103,4 @@ function Login() {
 
 export default Login;
 
-//Funcion para cerrar la sesion actual
-/*   const handleLogout = () => {
-    auth.logout()
-  } */
+

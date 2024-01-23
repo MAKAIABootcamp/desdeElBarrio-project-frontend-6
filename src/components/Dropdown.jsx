@@ -19,8 +19,8 @@ function DropDown() {
 
       <Dropdown.Menu>
         {/* Utiliza el componente Link para redirigir a la página de inicio de sesión */}
-        <Dropdown.Item as={Link} to="/login">LogIn</Dropdown.Item>
-        <Dropdown.Item onClick= {handleClick} >LogOut</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/login">Login</Dropdown.Item>
+        <Dropdown.Item onClick= {handleClick} >Logout</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

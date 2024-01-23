@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './NavBar.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DropDown from './Dropdown';
 
 const NavBar = () => {
   const [mostrarNovedades, setMostrarNovedades] = useState(false);
@@ -36,11 +38,7 @@ const NavBar = () => {
           <div className='apoyanos-container'>
             <Link className='NavBar__link' to="/Apoyanos">Apóyanos</Link>
           </div>
-          <div className='loginIcon-container'>
-            <Link to="/Login">
-              <img src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1703314387/user_1_zgjlax.png" alt="" />
-            </Link>
-          </div>
+          <DropDown/>
         </div>
       </nav>
       <Outlet />

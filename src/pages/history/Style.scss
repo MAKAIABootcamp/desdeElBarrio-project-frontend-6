@@ -8,10 +8,11 @@
 
 .seccin-historia .div {
   background-color: #000000;
-  height: 2430px;
+  height: 2030px;
   overflow: hidden;
   position: relative;
   width: 1492px;
+  border-radius: 100px;
 }
 
 .seccin-historia .overlap-group {
@@ -146,55 +147,11 @@
   width: 868px;
 }
 
-
-//VISUALIZACION DE LAS LINEAS PARA CLIC DEL SLIDER
-.seccin-historia .line {
-  height: 58px;
-left: 268px;
-position: absolute;
-top: 1337px;
-width: 60px;
-}
-
-.seccin-historia .line-2 {
-height: 45px;
-left: 264px;
-position: absolute;
-top: 1298px;
-width: 61px;
-}
-
-.seccin-historia .line-3 {
-height: 52px;
-left: 1197px;
-position: absolute;
-top: 1332px;
-width: 62px;
-}
-
-.seccin-historia .line-4 {
-height: 44px;
-left: 1202px;
-position: absolute;
-top: 1296px;
-width: 61px;
-}
-
 //OTROS VISUALIZACIONES
-.seccin-historia .rectangle-5 {
+.seccin-historia .btn-group{
   height: 67px;
-  left: 624px;
-  position: absolute;
-  top: 1846px;
   width: 409px;
-}
-
-.seccin-historia .slice {
-  height: 100px;
-  left: 773px;
-  position: absolute;
-  top: 1824px;
-  width: 100px;
+ 
 }
 
 .seccin-historia .Btn-portfolio {
@@ -208,6 +165,9 @@ width: 61px;
   position: absolute;
   text-align: center;
   top: 1866px;
-  width: 331px;
+  width: 351px;
+  background-color: #f17408;
+  text-decoration: none;
+  border-radius: 40px;
 }
 

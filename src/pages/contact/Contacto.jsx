@@ -22,49 +22,39 @@ export const Contacto = () => {
 
 
   return (
-    <div className="seccion-contacto">
-      <div className="seccion-contacto-wrapper">
-        <div className="seccion-contacto-text">
-          <h1>Informacion de contacto</h1>
-          <div className="seccion-contact-text2">
-            <p className="contact-p">
-              ¿Inquietudes? No dude en contactarnos. Nuestros asesores están a su disposición ante cualquier sugerencia.{" "}
-              <br />
-              Puede hacerlo por cualquiera de los siguientes canales
-            </p>
-          </div>
-        </div>
-        <div className="seccion-contact-form">
-          <section className="contactForm">
-            <form className="contactData" >
-              <label htmlFor="nameF" className="text-wrapper-name">Nombre</label>
-              <input type="text" id="nameF" name="nameF" value={formInfo.name} onChange={handleChangeInput} required />
-
-              <label htmlFor="lastName" className="text-wrapper-lastName">Apellido</label>
-              <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
-
-              <label htmlFor="email" className="text-wrapper-email">Correo</label>
-              <input type="email" id="email" name="email" value={formInfo.email} onChange={handleChangeInput} required />
-
-              <label htmlFor="text-wrapper-number">Teléfono</label>
-              <input type="tel" id="name" name="phone" value={formInfo.phone} onChange={handleChangeInput} required />
-
-              <label htmlFor="text-wrapper-message">Mensaje</label>
-              <textarea id="message" name="message" value={formInfo.message} onChange={handleChangeInput} required></textarea>
-              <div className="btnSubmit">
-                <button className="btnEnviar" type="submit">Enviar</button>
-              </div>
-            </form>
-          </section>
-
-          <section className="contactLocation">
-            <div className="contactMap">
-              <ViewMap />
-            </div>
-          </section>
-
+    <div className="seccion-contacto-wrapper">
+      <div className="seccion-contacto-text">
+        <h1>Informacion de contacto</h1>
+        <div className="seccion-contact-text2">
+          <p className="contact-p">
+            ¿Inquietudes? No dude en contactarnos. Nuestros asesores están a su disposición ante cualquier sugerencia.{" "}
+            <br />
+            Puede hacerlo por cualquiera de los siguientes canales
+          </p>
         </div>
       </div>
+      <div className="seccion-contact-form">
+        <section className="contactForm">
+          <form className="contactData" >
+            <label htmlFor="nameF" className="text-wrapper-name">Nombre:</label>
+            <input type="text" id="nameF" name="nameF" value={formInfo.name} onChange={handleChangeInput} required />
+
+            <label htmlFor="lastName" className="text-wrapper-lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+            <div className="btnSubmit">
+              <button className="btnEnviar" type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
+
+        <section className="contactLocation">
+          <div className="contactMap">
+            <ViewMap />
+          </div>
+        </section>
+
+      </div>
+
     </div>
   );
 };

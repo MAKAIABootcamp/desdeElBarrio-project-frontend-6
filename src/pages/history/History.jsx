@@ -7,8 +7,9 @@ export const History = () => {
       <div className="div">
         <div className="overlap-group">
           <div className="rectangle" />
-          <img className="img" alt="Rectangle" src="https://c.animaapp.com/0sp9g4x4/img/rectangle-38.png" />
-          <div className="noticias">Proyectos</div>
+          <div className="noticias">Proyectos
+            
+          </div>
           <div className="rectangle-2" />
           <img className="img-2" alt="Img" src="https://c.animaapp.com/0sp9g4x4/img/img.png" />
           <div className="container-main-title" />
@@ -32,9 +33,13 @@ export const History = () => {
             la necesidad de abrir un espacio alternativo y con más eco que pudiese buscar otras formas de gestión de
             proyectos y construcción de procesos de colectivos juveniles
           </p>
-               
-          <button className="Btn-portfolio" href="./document/github-git-cheat-sheet.pdf" download={''}>Portafolio</button>
-        </div>   
+
+          <div className="btn-group">
+            <button className="portfoliobtn">
+            <a className="Btn-portfolio" href="document/github-git-cheat-sheet.pdf" download="PortafolioDB" > Portafolio</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ const Register = () => {
       email: values.email,
       password: values.password,
       confirmPassword: values.confirmPassword,
+     
     };
     console.log(userData);
     dispatch(createAnAccountAsync(userData));

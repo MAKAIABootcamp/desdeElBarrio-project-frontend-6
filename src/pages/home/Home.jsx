@@ -67,56 +67,11 @@ const Home = () => {
             alternativo y con más eco que pudiese buscar otras formas de gestión
             de proyectos y construcción de procesos juveniles.
           </p>
-
-          <a href="historia">
+          <a href="History">
             <button className="leer-button">Leer más</button>
           </a>
         </div>
       </section>
-        </div>
-       
-          <div className='lineas-container'>
-          <img id='background-image' src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1704246039/IMG_2043_pfryiy.jpg " alt="" />
-          <h1>Líneas de trabajo</h1>
-          <div className='containers-lineas'>
-          <div className='talleres-container'>
-            <h2>Talleres formativos</h2>
-            <p>Ofrecemos una amplia gama de talleres formativos, que abarcan disciplinas como danza, circo, canto, graffiti y otras expresiones artísticas, proporcionando oportunidades valiosas para el desarrollo creativo y personal de los participantes. </p>
-          </div>
-          <div className='eventos-container'>
-            <h2>Eventos culturales</h2>
-            <p>Realizamos una gran variedad de eventos. Desde experiencias musicales y recreativas hasta expresiones artísticas, cine y deportes. 
-              <br />
-              Nos dedicamos a fomentar y visibilizar la riqueza cultural de nuestro territorio.</p>
-          </div>
-          <div className='proyectos-container'>
-            <h2>Proyectos específicos</h2>
-            <p>Desde el Barrio impulsa proyectos con un impacto tangible. Trabajamos proyectos educativos, ambientales, deportivos, sobre género y sexualidad.
-              <br /> 
-              Aportando a la comunidad diversos saberes y espacios para el desarrollo integro. </p>
-          </div>
-          </div>
-          </div>
-          <div className='links-container'>
-            <div className='link-novedades'>
-              <a href="Novedades">
-                <img src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1704250728/Group_13_d13qpk.png" alt="" />
-              </a>
-            </div>
-            <div className='link-historia'>
-              <a href="Historia">
-                <img src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1704250728/Group_14_fijwvu.png" alt="" />
-              </a>
-            </div>
-            <div className='link-apoyanos'>
-              <a href="Apoyanos">
-                <img src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1704250728/Group_15_bgba6q.png" alt="" />
-              </a>
-            </div>
-          </div>
-          
-          
-        </div>
 
       <div className="lineas-container">
         <img
@@ -134,58 +89,18 @@ const Home = () => {
           ))}
         </section>
       </div>
-      <section className="contentCards">{webSiteContent.map((item, index) => (
-        <figure key={index} className="contentCard" onClick={()=>navigate(item.link)}>
-          <img src={ item.image} alt={item.title} />
-          {/* <figcaption>{ item.title}</figcaption> */}
-        </figure>
-      ))}</section>
-     <footer>
-     <div className="footer-container">
-        <div className="logos-contact">
-          <div className="logos">
-            <img
-              src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1703312802/WhatsApp_Image_2023-12-11_at_11.33.26_PM_1_hkwflz.jpg"
-              alt=""
-            />
-            <img
-              src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1703313317/WhatsApp_Image_2023-12-11_at_11.33.28_PM_oc6r8h.jpg"
-              alt=""
-            />
-          </div>
-          <div className="contact">
-            <div className="phone">
-              <h3>Teléfono</h3>
-              <h4>300 222 90 90</h4>
-            </div>
-            <div className="media">
-              <h3>Redes sociales</h3>
-              <a href="https://www.instagram.com/desdeelbarriodb/">
-                <img
-                  src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1697320240/Frame_2_nvbxom.png"
-                  alt=""
-                />
-              </a>
-              <a href="https://www.facebook.com/desdeelbarriodb">
-                <img
-                  src="https://res.cloudinary.com/dpc1vrbek/image/upload/v1697320241/Frame_cdypsz.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div className="email">
-              <h3>Correo</h3>
-              <h4>desdeelbarriocol@gmail.com</h4>
-            </div>
-          </div>
-        </div>
-        <div className="derechos">
-          Copyright corporación Desde el Barrio 2023 | Aviso legal | Terminos y
-          condiciones
-        </div>
-      </div>
-     </footer>
-     
+      <section className="contentCards">
+        {webSiteContent.map((item, index) => (
+          <figure
+            key={index}
+            className="contentCard"
+            onClick={() => navigate(item.link)}
+          >
+            <img src={item.image} alt={item.title} />
+            {/* <figcaption>{ item.title}</figcaption> */}
+          </figure>
+        ))}
+      </section>
     </main>
   );
 };

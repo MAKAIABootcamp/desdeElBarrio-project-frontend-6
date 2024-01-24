@@ -9,10 +9,12 @@ import Eventos from "../pages/novedades/Eventos";
 import Talleres from "../pages/novedades/Talleres";
 import Noticias from "../pages/novedades/Noticias";
 import Register from "../pages/Register/register";
+import History from "../pages/history/History";
+import AdminPanel from "../pages/adminPanel/AdminPanel";
+import Contacto from "../pages/contact/Contacto";
 import { useAuth } from "../context/AuthContext";
 import PublicRoutes from "./PublicRoutes";
 import PrivatedRoutes from "./PrivatedRoutes";
-import History from "../pages/history/History";
 
 export const NavRoutes = () => {
   const auth = useAuth();
@@ -26,11 +28,13 @@ export const NavRoutes = () => {
             <Route path="home" element={<Home />} />
             <Route path="Apoyanos" element={<Apoyanos />} />
             <Route path="History" element={<History />} />
+            <Route path="Contacto" element={<Contacto />} />
           </Route>
           <Route element={<PrivatedRoutes isAuthenticate={auth.user.uid === undefined} />}>
             <Route path="Eventos" element={<Eventos />} />
             <Route path="Talleres" element={<Talleres />} />
             <Route path="Noticias" element={<Noticias />} />
+            <Route path="Admin" element={<AdminPanel />} />
           </Route>
           <Route path="register" element={<Register />} />
         </Route>

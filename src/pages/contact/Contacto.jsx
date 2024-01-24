@@ -41,6 +41,17 @@ export const Contacto = () => {
 
             <label htmlFor="lastName" className="text-wrapper-lastName">Apellido:</label>
             <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+            
+            <label htmlFor="lastName" className="text-wrapper-lastName">Correo:</label>
+            <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+            
+            <label htmlFor="lastName" className="text-wrapper-lastName">Telefono:</label>
+            <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+            
+            <label htmlFor="lastName" className="text-wrapper-lastName">Mensaje:</label>
+            <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
+            
+            
             <div className="btnSubmit">
               <button className="btnEnviar" type="submit">Enviar</button>
             </div>

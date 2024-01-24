@@ -6,7 +6,7 @@ const PrivatedRoutes = ({
   redirectPath = "/Register",
   children,
 }) => {
-  if (!isAuthenticate) return <Navigate to={redirectPath} />;
+  if (!isAuthenticate) return <Navigate to={redirectPath = "/Admin"} />;
   return <div>{children ? children : <Outlet />}</div>;
 };
 

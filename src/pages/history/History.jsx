@@ -1,15 +1,19 @@
 import React from "react";
 import "./Style.scss";
+import Slider from "../../components/Slider/Slider";
 
 export const History = () => {
   return (
+
     <div className="seccin-historia">
       <div className="div">
         <div className="overlap-group">
           <div className="rectangle" />
-          <div className="noticias">Proyectos
-            
-          </div>
+          <div className="noticias">Proyectos</div>
+          <div className="slider-wrapper">
+              <Slider />
+            </div>
+
           <div className="rectangle-2" />
           <img className="img-2" alt="Img" src="https://c.animaapp.com/0sp9g4x4/img/img.png" />
           <div className="container-main-title" />
@@ -36,7 +40,7 @@ export const History = () => {
 
           <div className="btn-group">
             <button className="portfoliobtn">
-            <a className="Btn-portfolio" href="document/github-git-cheat-sheet.pdf" download="PortafolioDB" > Portafolio</a>
+              <a className="Btn-portfolio" href="document/github-git-cheat-sheet.pdf" download="PortafolioDB" > Portafolio</a>
             </button>
           </div>
         </div>

@@ -15,6 +15,7 @@ import Contacto from "../pages/contact/Contacto";
 import { useAuth } from "../context/AuthContext";
 import PublicRoutes from "./PublicRoutes";
 import PrivatedRoutes from "./PrivatedRoutes";
+import Slider from "../components/Slider/Slider";
 
 export const NavRoutes = () => {
   const auth = useAuth();
@@ -29,6 +30,7 @@ export const NavRoutes = () => {
             <Route path="Apoyanos" element={<Apoyanos />} />
             <Route path="History" element={<History />} />
             <Route path="Contacto" element={<Contacto />} />
+            <Route path="Swiper" element={<Slider />} />
           </Route>
           <Route element={<PrivatedRoutes isAuthenticate={auth.user.uid === undefined} />}>
             <Route path="Eventos" element={<Eventos />} />

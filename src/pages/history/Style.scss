@@ -12,7 +12,7 @@
   overflow: hidden;
   position: relative;
   width: 1492px;
-  border-radius: 100px;
+  border-radius: 20px;
 }
 
 .seccin-historia .overlap-group {
@@ -25,7 +25,7 @@
 
 .seccin-historia .rectangle {
   background-color: #ffffff;
-  height: 1193px;
+  height: 1293px;
   left: 0;
   position: absolute;
   top: 783px;
@@ -149,25 +149,27 @@
 
 //OTROS VISUALIZACIONES
 .seccin-historia .btn-group{
-  height: 67px;
+  height: 107px;
   width: 409px;
  
 }
 
+
 .seccin-historia .Btn-portfolio {
   color: #ffffff;
   font-family: "Lexend", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  left: 663px;
+  font-size: 34px;
+  font-weight: 600;
+  left: 583px;
   letter-spacing: 0;
   line-height: 30px;
   position: absolute;
   text-align: center;
   top: 1866px;
   width: 351px;
+  height: 35px;
   background-color: #f17408;
   text-decoration: none;
-  border-radius: 40px;
+  border-radius: 20px;
+ 
 }
-

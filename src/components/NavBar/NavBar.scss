@@ -66,8 +66,14 @@
   
   .novedades-container .novedades-menu .NavBar__link:hover {
     text-decoration: underline; /* Subrayar enlace al pasar el ratón */
-
   }
+
+  .dropdown-toggle {
+    background-color: black !important;
+    border: none !important;
+  }
+
+  
   .Navbar_mobile{
     display: none;
     

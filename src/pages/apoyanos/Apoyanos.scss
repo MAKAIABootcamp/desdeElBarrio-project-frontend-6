@@ -30,7 +30,7 @@ header {
 }
 
 button{
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 
@@ -40,11 +40,44 @@ button{
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.8);
 }
+#mensaje{
+  height: 75%;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+}
+.columnform{
+  display: flex;
+  flex-direction: column;
+}
 
+#imagen{
+  background-color: white;
+  
+}
+ input, textarea{
+  border-radius: 2px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #f9a43c82;
+  border: none;
+  outline: none;
+  margin: 5px;
+  height: 30px;
+  padding: 10px;
+
+  &::placeholder {
+  color:  #eb8202;
+   
+   font-weight: 700;
+   
+  }
+ }
 .voluntario-form label,
 .donacion-form label {
   margin-top: 10px;
@@ -146,6 +179,9 @@ hr {
                 width: 100%;
                 margin-bottom: 10px;
               }
+              textarea, input{
+                width: 93%;
+              }
     
               button {
                 font-size: 1rem;
@@ -154,5 +190,23 @@ hr {
           }
         }
       }
+    }
+    #imagen{
+      background-color: white;
+      width: 40%;
+      height: 100%;
+    }
+    .columns{
+      display: flex;
+      flex-direction: column;
+
+      
+    }
+    .columnform{
+      display: flex;
+      flex-direction: column;
+      
+        width: 93%;
+      
     }
 }

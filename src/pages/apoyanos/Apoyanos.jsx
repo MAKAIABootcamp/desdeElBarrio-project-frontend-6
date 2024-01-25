@@ -147,18 +147,24 @@ const Apoyanos = () => {
         <h2>Únete como Voluntario</h2>
         <section className="voluntario-section">
           <form onSubmit={handleSubmit} className="voluntario-form">
-            <label htmlFor="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleInputChange} required />
-            <label htmlFor="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
-            <label htmlFor="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" value={formData.telefono} onChange={handleInputChange} required />
-            <label htmlFor="areas-interes">Áreas de Interés:</label>
-            <textarea id="areas-interes" name="areasInteres" value={formData.areasInteres} onChange={handleInputChange}></textarea>
-            <label htmlFor="disponibilidad">Disponibilidad de Tiempo:</label>
-            <input type="text" id="disponibilidad" name="disponibilidad" value={formData.disponibilidad} onChange={handleInputChange} />
-            <label htmlFor="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" value={formData.mensaje} onChange={handleInputChange}></textarea>
+            <div className='columns'>
+            <div className='columnform'>
+          {/*<label htmlFor="nombre">Nombre:</label>*/}
+            <input placeholder='Nombre' type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleInputChange} required />
+           {/* <label htmlFor="email">Correo Electrónico:</label>*/}
+            <input placeholder='Correo Electrónico' type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
+            {/*<label htmlFor="telefono">Teléfono:</label>*/}
+            <input placeholder='Teléfono' type="tel" id="telefono" name="telefono" value={formData.telefono} onChange={handleInputChange} required />
+             {/*<label htmlFor="areas-interes">Áreas de Interés:</label>*/}
+            <textarea placeholder='Áreas de Interés' id="areas-interes" name="areasInteres" value={formData.areasInteres} onChange={handleInputChange}></textarea>
+            </div>
+            <div className='columnform'>
+             {/*<label htmlFor="disponibilidad">Disponibilidad de Tiempo:</label>*/}
+            <input placeholder='Disponibilidad de Tiempo' type="text" id="disponibilidad" name="disponibilidad" value={formData.disponibilidad} onChange={handleInputChange} />
+             {/*<label htmlFor="mensaje">Mensaje:</label>*/}
+            <textarea placeholder='Mensaje' id="mensaje" name="mensaje" value={formData.mensaje} onChange={handleInputChange}></textarea>
+            </div>
+            </div>
             <button type="submit">Unirse como Voluntario</button>
           </form>
         </section>

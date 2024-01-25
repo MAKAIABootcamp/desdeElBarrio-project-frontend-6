@@ -176,8 +176,8 @@ const Apoyanos = () => {
               <img src={libros} alt="Libros" />
               <h3>Donación de Libros</h3>
               <form onSubmit={handleLibroSubmit} className="donacion-form">
-                <label htmlFor="libro-titulo">Título del Libro:</label>
-                <input type="text" id="libro-titulo" name="titulo" value={libroData.titulo} onChange={handleLibroInputChange} required />
+               {/*  <label htmlFor="libro-titulo">Título del Libro:</label>*/}
+                <input placeholder='Título del Libro' type="text" id="libro-titulo" name="titulo" value={libroData.titulo} onChange={handleLibroInputChange} required />
                 <button type="submit">Donar</button>
               </form>
             </div>
@@ -185,8 +185,8 @@ const Apoyanos = () => {
               <img src={juguetes} alt="Juguetes" />
               <h3>Donación de Juguetes</h3>
               <form onSubmit={handleJugueteSubmit} className="donacion-form">
-                <label htmlFor="juguetes-descripcion">Descripción del Juguete:</label>
-                <textarea id="juguetes-descripcion" name="descripcion" value={jugueteData.descripcion} onChange={handleJugueteInputChange} required></textarea>
+               {/*  <label htmlFor="juguetes-descripcion">Descripción del Juguete:</label>*/}
+                <textarea placeholder='Descripción del Juguete:' id="juguetes-descripcion" name="descripcion" value={jugueteData.descripcion} onChange={handleJugueteInputChange} required></textarea>
                 <button type="submit">Donar</button>
               </form>
             </div>

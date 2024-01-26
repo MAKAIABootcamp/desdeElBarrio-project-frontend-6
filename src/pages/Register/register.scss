@@ -30,21 +30,22 @@ $color-texto: #000000;
 
 .upload-button {
   padding: 10px;
-  background-color: #F17408;
+  // background-color: #000000;
   color: white;
-  border: 1px solid #F17408;
+  width: 90px;
+  
   border-radius: 4px;
   cursor: pointer;
 }
 
 .upload-button:hover {
-  background-color: #F17408;
-  border: 1px solid #F17408;
+  background-color: #de88166d;
+  
 }
 
 .upload-button:focus {
   outline: none; /* Elimina el contorno predeterminado al enfocar el elemento */
-  box-shadow: 0 0 5px #F17408; /* Agrega una sombra al enfocar el elemento */
+  box-shadow: 0 0 5px #c9783169; /* Agrega una sombra al enfocar el elemento */
 }
 
 /* Estilo adicional para mostrar que se ha seleccionado un archivo */

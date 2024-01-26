@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom"; // Importa el componente L
 import { logoutAsync } from "../store/users/userThunks";
 import Swal from "sweetalert2";
 
+
 function DropDown() {
 
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ function DropDown() {
       <Dropdown.Menu>
         {/* Utiliza el componente Link para redirigir a la página de inicio de sesión */}
         {user && user?.name ? (
-          <Dropdown.Item onClick={handleClick}>Logout</Dropdown.Item>
+          <Dropdown.Item className="droplog" onClick={handleClick}>Logout</Dropdown.Item>
         ) : (
           <Dropdown.Item as={Link} to="/login">
             Login

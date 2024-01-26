@@ -76,9 +76,10 @@ export const NavRoutes = () => {
             </Route>
             <Route element={<PrivatedRoutes isAuthenticate={isAuthenticate} />}>
               
-              
               {user && user?.rol === "admin" ? (
+              <>
                 <Route path="admin" element={<AdminPanel />} />
+              </> 
               ) : (
                 <></>
               )}

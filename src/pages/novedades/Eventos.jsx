@@ -26,7 +26,6 @@ const Eventos = () => {
 
   return (
     <div className="container">
-      <AddCards/>
       <div className="main-title">Eventos</div>
       <div className="catalog">
         {events.map((event, index) => (

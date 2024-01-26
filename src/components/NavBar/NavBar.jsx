@@ -18,7 +18,6 @@ const NavBar = () => {
   const [active,setActive] = React.useState(window.location.pathname.replace('/','')||'home')
 
     const location = useLocation()
-    console.log(location)
     function close() {
         setOpen(false)
     }

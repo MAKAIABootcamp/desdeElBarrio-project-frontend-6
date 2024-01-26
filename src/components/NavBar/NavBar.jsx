@@ -21,11 +21,13 @@ const NavBar = () => {
     setMostrarNovedades(!mostrarNovedades);
   };
 
-  const location = useLocation();
-  console.log(location);
-  function close() {
-    setOpen(false);
-  }
+  const [open,setOpen] = React.useState(false)
+  const [active,setActive] = React.useState(window.location.pathname.replace('/','')||'home')
+
+    const location = useLocation()
+    function close() {
+        setOpen(false)
+    }
 
   useEffect(() => {
     setActive(

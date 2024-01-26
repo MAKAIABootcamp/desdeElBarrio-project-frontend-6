@@ -1,41 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Styles.scss";
+import AddCards from '../../components/AdminForm/AddCards.jsx'
+import { getWorkshops, listenToWorkshops } from "../../firebase/firestoreCards.config";
 
-const workshops = [
-  {
-    image: "https://c.animaapp.com/Q9CmjvVd/img/image-4@2x.png",
-    title: "Taller de Graffiti",
-    date: "15 de Febrero",
-  },
-  {
-    image: "https://c.animaapp.com/Q9CmjvVd/img/image-4-3@2x.png",
-    title: "Taller de Circo",
-    date: "17 de Febrero",
-  },
-  {
-    image: "https://c.animaapp.com/Q9CmjvVd/img/image-4-2@2x.png",
-    title: "Taller de Guitarra Acustica",
-    date: "18 de Febrero",
-  },
-  {
-    image: "https://c.animaapp.com/Q9CmjvVd/img/image-4-1@2x.png",
-    title: "Taller de Defensa Personal",
-    date: "Miércoles 8-10 p.m",
-  },
-];
+const Talleres = () => {
+  const [workshops, setWorkshops] = useState([]);
 
-export const Container = () => {
+  useEffect(() => {
+    // Obtener eventos iniciales
+    const fetchData = async () => {
+      const workshopsData = await getWorkshops();
+      setWorkshops(workshopsData);
+    };
+    fetchData();
+
+    // Escuchar cambios en tiempo real en la colección de eventos
+    const unsubscribe = listenToWorkshops((updatedEvents) => {
+      setWorkshops(updatedEvents);
+    });
+
+    // Limpiar la suscripción cuando el componente se desmonta
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div className="container">
+      <AddCards/>
       <div className="main-title">Talleres</div>
       <div className="catalog">
-        {workshops.map((workshop, index) => (
+        {workshops.map((event, index) => (
           <div className="container-card" key={index}>
             <div className="card">
-              <img className="image" alt="Image" src={workshop.image} />
+              <img className="image" alt="Image" src={event.imageUrl} />
               <div className="details">
-                <p className="title">{workshop.title}</p>
-                <p className="date">{workshop.date}</p>
+                <p className="title">{event.title}</p>
+                <p className="date">{event.date}</p>
               </div>
             </div>
           </div>
@@ -45,4 +44,4 @@ export const Container = () => {
   );
 };
 
-export default Container;
+export default Talleres;

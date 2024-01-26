@@ -1,42 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Styles.scss";
+import AddCards from '../../components/AdminForm/AddCards.jsx'
+import { getEvents, listenToEvents } from "../../firebase/firestoreCards.config";
 
-const events = [
-  {
-    id:1,
-    image: "https://c.animaapp.com/Zgqnbjdg/img/image-4@2x.png",
-    title: "Batalla de Tags y batalla de Gallos!!",
-    date: "20 de Diciembre",
-  },
-  {
-    id:2,
-    image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-3@2x.png",
-    title: "¡Se viene el segundo año del Festival Triple C!",
-    date: "20 de Diciembre",
-  },
-  {
-    id:3,
-    image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-2@2x.png",
-    title: "Reconstrucción de memoria Barial",
-    date: "1 de Agosto",
-  },
-  {
-    id:4,
-    image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-1@2x.png",
-    title: "Cine Foro Ainbo",
-    date: "13 de Noviembre",
-  },
-];
 
-export const Container = () => {
+const Eventos = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    // Obtener eventos iniciales
+    const fetchData = async () => {
+      const eventsData = await getEvents();
+      setEvents(eventsData);
+    };
+    fetchData();
+
+    // Escuchar cambios en tiempo real en la colección de eventos
+    const unsubscribe = listenToEvents((updatedEvents) => {
+      setEvents(updatedEvents);
+    });
+
+    // Limpiar la suscripción cuando el componente se desmonta
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div className="container">
-      <div className="main-title">Eventos </div>
+      <AddCards/>
+      <div className="main-title">Eventos</div>
       <div className="catalog">
         {events.map((event, index) => (
           <div className="container-card" key={index}>
             <div className="card">
-              <img className="image" alt="Image" src={event.image} />
+              <img className="image" alt="Image" src={event.imageUrl} />
               <div className="details">
                 <p className="title">{event.title}</p>
                 <p className="date">{event.date}</p>
@@ -48,5 +44,5 @@ export const Container = () => {
     </div>
   );
 };
- 
-export default Container
+
+export default Eventos;

@@ -1,6 +1,7 @@
 # Desde el Barrio website
 
-![Texto alternativo](https://github.com/MAKAIABootcamp/desdeElBarrio-project-frontend-6/assets/138082640/7eae7a94-2bdf-421f-92ec-343a804ed66d)
+![Diseño sin título (1)](https://github.com/MAKAIABootcamp/desdeElBarrio-project-frontend-6/assets/138082640/4ccc1fa2-cdf2-465d-83e9-cd80841d8ab2)
+
 
 
 

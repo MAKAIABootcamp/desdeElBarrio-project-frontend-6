@@ -7,22 +7,36 @@
     background-color: black;
     align-items: center;
     padding: 5px 40px;
+   
 
     img{
         width: 10%;
     }
+   
     .loginIcon-container{
         img{
             cursor: pointer;
-            width: 120%,
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
         }
     }
        .NavBar__link{
             text-decoration: none;
             color: white;
-            font-family: roboto;
+            font-family: "Roboto", sans-serif;
             font-weight: bold;
+            font-size: 25px;
+            
+
+            &:hover {
+              color: #dd8125; /* Cambia el color al pasar el mouse sobre el enlace */
+          }
+
         }
+    
+
+   
     
    .apoyanos-container{
     border: 1px solid;
@@ -39,7 +53,7 @@
     position: relative;
     color: white; 
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lexend-Black", Helvetica;
   }
   
   .novedades-container .novedades-menu {
@@ -66,13 +80,21 @@
   
   .novedades-container .novedades-menu .NavBar__link:hover {
     text-decoration: underline; /* Subrayar enlace al pasar el ratón */
-
   }
+
+  .dropdown-toggle {
+    background-color: black !important;
+    border: none !important;
+   
+  }
+
+  
   .Navbar_mobile{
     display: none;
     
   }
 
+ 
   @media (max-width: 768px){
   .NavBar__container{
     display: none;

@@ -1,18 +1,44 @@
-.seccion-contacto{
-    background-image: url("../../images/niñ@sdb.jpg");
-    background-position: 50% 50%;
-    background-size:cover;
-    height: 1419px;
-    width: 1531px;
+// body {
+//     font-family: 'Lexend', sans-serif;
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+.seccion-contacto-wrapper {
+    background-image: url("https://res.cloudinary.com/dyuf3v9mb/image/upload/v1706244591/ni%C3%B1_sdb_wenhdj.jpg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    // height: 100%;
+    // margin: auto;
+    padding: 20px;
+
+
 }
 
-
-.seccion-contacto-wrapper{
+.seccion-contacto-wrapper .seccion-contact-wrapper-frame {
+    background-color: #171a1fa6;
+    padding: 20px;
+    border-radius: 15px;
+    // width: 100%;
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // height: 1418px;
+    // position: relative;
+    // top: 1px;
+    // width: 1516px;
 }
 
-.seccion-contacto-text h1{
+.seccion-contacto-wrapper .seccion-contacto-text h1 {
     color: #f17408;
-    font-family: "Lexend-Bold", Helvetica;
+    font-family: "Lexend-Black", Helvetica;
     font-size: 72px;
     font-weight: 900;
     left: 0;
@@ -23,9 +49,9 @@
     white-space: nowrap;
 }
 
-.seccion-contact-text2 p{
+.seccion-contacto-wrapper .seccion-contact-text2 p {
     color: #ffffff;
-    font-family: "Lexend Bold",Helvetica;
+    font-family: "Lexend-bold", Helvetica;
     font-size: 24px;
     font-weight: 700;
     left: 0;
@@ -33,19 +59,73 @@
     line-height: 50px;
     text-align: center;
     top: 0;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: row;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+// .contactForm label{
+//     margin-top: 10px;
+// }
+
+textarea {
+    resize: vertical;
+}
+
+.contactLocation {
+    margin-top: 20px;
+    height: 458px;
+
+    text-align: center;
+
+
 
 }
 
-.contactData label{
-    color: #ffffff;
-    font-family: "Manrope-ExtraBold", Helvetica;
-    font-size: 16px;
-    font-weight: 800;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 20px;
-    top: 0;
-    white-space: nowrap;
+
+.contactData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: none;
+        opacity: 0.7;
+        padding: 5px 10px;
+    }
+
+    textarea {
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: none;
+        opacity: 0.7;
+        padding: 5px 10px;
+    }
+    button{
+        align-self: center;
+        border: 2px solid #f17408;
+        background-color: #f17408;
+        &:hover{
+            background-color: transparent;
+            color: #f17408;
+            border: 2px solid #f17408;
+            cursor: pointer;
+        }
+    }
 }
-
-

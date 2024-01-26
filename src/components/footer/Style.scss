@@ -7,9 +7,11 @@
     }
     .logos{
       display: flex;
+      align-items: center;
+      margin: 10px;
       img{
-        width: 150px;
-        height: auto;
+        width:180px;
+       
       }
     }
     .contact{

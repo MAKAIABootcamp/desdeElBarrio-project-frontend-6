@@ -3,6 +3,7 @@ import "./Styles.scss";
 import AddCards from '../../components/AdminForm/AddCards.jsx'
 import { getEvents, listenToEvents } from "../../firebase/firestoreCards.config";
 
+
 const Eventos = () => {
   const [events, setEvents] = useState([]);
 

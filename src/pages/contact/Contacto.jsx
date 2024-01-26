@@ -22,8 +22,8 @@ export const Contacto = () => {
 
 
   return (
-    <div className="seccion-contacto">
-      <div className="seccion-contacto-wrapper">
+    <div className="seccion-contacto-wrapper">
+      <div className="seccion-contact-wrapper-frame">
         <div className="seccion-contacto-text">
           <h1>Informacion de contacto</h1>
           <div className="seccion-contact-text2">
@@ -37,23 +37,23 @@ export const Contacto = () => {
         <div className="seccion-contact-form">
           <section className="contactForm">
             <form className="contactData" >
-              <label htmlFor="nameF" className="text-wrapper-name">Nombre</label>
+              <label htmlFor="nameF" className="text-wrapper-name">Nombre:</label>
               <input type="text" id="nameF" name="nameF" value={formInfo.name} onChange={handleChangeInput} required />
 
-              <label htmlFor="lastName" className="text-wrapper-lastName">Apellido</label>
+              <label htmlFor="lastName" className="text-wrapper-lastName">Apellido:</label>
               <input type="text" id="lastName" name="lastName" value={formInfo.lastName} onChange={handleChangeInput} required />
 
-              <label htmlFor="email" className="text-wrapper-email">Correo</label>
-              <input type="email" id="email" name="email" value={formInfo.email} onChange={handleChangeInput} required />
+              <label htmlFor="correo" className="text-wrapper-correo">Correo:</label>
+              <input type="text" id="correo" name="correo" value={formInfo.lastName} onChange={handleChangeInput} required />
 
-              <label htmlFor="text-wrapper-number">Teléfono</label>
-              <input type="tel" id="name" name="phone" value={formInfo.phone} onChange={handleChangeInput} required />
+              <label htmlFor="telefono" className="text-wrapper-telefono">Telefono:</label>
+              <input type="text" id="telefono" name="telefono" value={formInfo.lastName} onChange={handleChangeInput} required />
 
-              <label htmlFor="text-wrapper-message">Mensaje</label>
-              <textarea id="message" name="message" value={formInfo.message} onChange={handleChangeInput} required></textarea>
-              <div className="btnSubmit">
-                <button className="btnEnviar" type="submit">Enviar</button>
-              </div>
+              <label htmlFor="mensaje" className="text-wrapper-mensaje">Mensaje:</label>
+              <textarea type="text" id="mensaje" name="mensaje" value={formInfo.lastName} onChange={handleChangeInput} required />
+
+              <button className="btnEnviar" type="submit">Enviar</button>
+
             </form>
           </section>
 

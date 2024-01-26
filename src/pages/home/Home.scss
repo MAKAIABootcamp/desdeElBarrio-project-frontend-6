@@ -1,222 +1,211 @@
-.main__img{
- img{
-  width: 100%,
- }
+.main__img {
+  img {
+    width: 100%;
+  }
 }
-.quienes-somos-container{
+.quienes-somos-container {
   display: flex;
   background-color: white;
   padding: 50px;
   padding-left: 90px;
-img{
-  width: 570px;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.479);
-  &:hover{
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
-    
+  img {
+    width: 570px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.479);
+    &:hover {
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .text-column {
+    padding: 0 5% 0 10%;
+    font-family: "Roboto", sans-serif;
+
+    h1 {
+      color: #f17408;
+      text-align: center;
+      font-size: 38px;
+    }
+    p {
+      text-align: justify;
+      line-height: 30px;
+      font-size: 20px;
+    }
+    .leer-button {
+      
+      margin-left: 250px;
+      background-color: #f17408;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 25px;
+      margin-top: 10px;
+      font-weight: bold;
+      border-radius: 40px;
+
+      &:hover {
+        background-color: black;
+      }
+    }
   }
 }
-.text-column{
-  padding: 0 5% 0 10%;
-  font-family: 'Roboto', sans-serif;
 
-  h1{
-    color:#F17408;
+.workCards {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  // align-content: space-between;
+  gap: 25px;
+}
+
+.workCard {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  border-radius: 20px;
+  padding: 28px 30px;
+  background-color: #fff;
+  width: 350px;
+  height: 350px;
+
+  h2 {
+    color: #f17408;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
     text-align: center;
-    font-size: 38px
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
   }
-  p{
-    text-align: justify;
-    line-height: 30px;
-    font-size: 20px;
-    
+  p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
   }
-  .leer-button{
-   margin-left: 150px;
-    background-color: #F17408;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    margin-top: 10px;
-    font-weight: bold;
-    border-radius: 40px;
+}
+.lineas-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(0.5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    margin: 25px;
+    font-size: 43px;
+  }
+}
+
+.contentCard {
+  // position: relative;
+  width: 400px;
+  height: 300px;
+  box-shadow: -8px 13px 37px -1px rgba(13, 12, 12, 0.75);
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  // figcaption{
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   background-color: #B45504;;
+  // }
+}
+.contentCard:hover{
+  filter: sepia(90%);
+}
+.contentCards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: #f17408;
+  padding: 66px 33px;
+}
 
 
-&:hover {
+ .footer-container{
     background-color: black;
-}
-  }
-}
-}
-   .lineas-container{
-    position: relative;
-    display: flex;
-    #background-image{
-      width: 100%;
-      filter: brightness(0.5);
-      
-      background: center center fixed;
-      background-size: cover;
-    }
-
-    h1{
-      position: absolute !important;
-      color: rgb(255, 255, 255);
-      transform: translate(-50%, -50%);
-      top:100px;
-      left: 50%;
-      font-size: 42px;
-    }
-   
-    .talleres-container {
-      position: absolute;
-      background-color: white;
-      flex: 1;
-      color: rgb(2, 1, 1);
-      transform: translate(-50%, -50%);
-      top: 60%;
-      left: 20%;
-      width: 200px;
-      height: 300px;
-      padding: 20px 30px 50px 30px;
-      text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      h2{
-        color: #F17408;
-        font-weight: bolder;
-      }
-     
-    }
-    .eventos-container{
-      position: absolute;
-      background-color: white;
-      flex: 1;
-      color: rgb(2, 1, 1);
-      transform: translate(-50%, -50%);
-      top: 60%;
-      left: 50%;
-      width: 200px;
-      height: 300px;
-      padding: 20px 30px 50px 30px;
-      text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      h2{
-        color: #F17408;
-        font-weight: bolder;
-      }
-    }
-    .proyectos-container{
-      position: absolute;
-      background-color: white;
-      flex: 1;
-      color: rgb(2, 1, 1);
-      transform: translate(-50%, -50%);
-      top: 60%;
-      left: 80%;
-      width: 200px;
-      height: 300px;
-      padding: 20px 30px 50px 30px;
-      text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      h2{
-        color: #F17408;
-        font-weight: bolder;
-      }
-    }
-   }
-
-   .links-container{
-    display: flex;
-    background-color: #F17408;
+    font-family: "Roboto", sans-serif;
     
-   
-
-    .link-novedades{
-      a{
-        img{
-       width: 350px;
-      margin: 30px;
-      margin-left: 70px;
-      transition: box-shadow 0.3s ease;
-      box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.479);
-       &:hover{
-      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25); 
-  }
-        }
+    
+    .logos-contact{
+      display: flex;
+      justify-content:space-around;
+      padding: 20px;
+      font-size: small;
+    }
+    .logos{
+      display: flex;
+      img{
+        width: 150px;
+        height: auto;
       }
     }
-
-    .link-historia{
-      a{
-        img{
-      width: 350px;
-      margin: 30px;
-      transition: box-shadow 0.3s ease;
-      box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.479);
-       &:hover{
-      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25); 
-  }
-     }
+    .contact{
+      color: white;
+      display: flex;
+      padding-left: 100px;
+      justify-content:space-around;
+      gap: 50px;
+      text-align: center;
+      .phone{
+        padding-top: 30px;
+        h4{
+          font-size: 15px;
+        }
+        h3{
+          font-size: 25px;
+        }
       }
       
-    }
 
-    .link-apoyanos{
-      a{
-        img{
-          width: 350px;
-          margin: 30px;
-          transition: box-shadow 0.3s ease;
-          box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.479);
-          &:hover{
-          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25); 
-  }
-        }
+    }
+    .media{
+      padding-top: 30px;
+      h3{
+        font-size: 25px;
+      }
+      img{
+        width: 40px;
+        
       }
     }
-   
-   }
-   .footer-container{
-      background-color: black;
-      .logos-contact{
-        display: flex;
-        justify-content:space-around;
-        padding: 20px;
+    .email{
+      padding-top: 30px;
+      h3{
+        font-size: 25px;
       }
-      .logos{
-        display: flex;
-        img{
-          width: 150px;
-          height: auto;
-        }
+      h4{
+        font-size: 18px;
       }
-      .contact{
-        color: white;
-        display: flex;
-        padding-left: 100px;
-        justify-content:space-around;
-        gap: 50px;
-        text-align: center;
+    }
+    .derechos{
+      color: white;
+      text-align: center;
+      padding: 15px;
       
-      }
-      .media{
-        img{
-          width: 40px;
-        }
-      }
-      .derechos{
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-   }
-
+    }
+ }
 
 @media screen and (max-width: 600px) {
   .main__img img {
@@ -255,7 +244,7 @@ img{
       .leer-button {
         margin-left: 0;
 
-        background-color: #F17408;
+        background-color: #f17408;
         color: white;
         padding: 15px 30px;
         border: none;
@@ -272,123 +261,176 @@ img{
     }
   }
 
-  .lineas-container {
-   
-    display: flex;
+  // .lineas-container {
+
+  //   display: flex;
+  //   background-color: black;
+  //   position: relative;
+
+  //   #background-image {
+  //     width: 100%;
+  //     filter: brightness(0.5);
+  //     height: 1050px;
+
+  //   }
+
+  //   h1 {
+  //     font-size: 30px;
+  //     top: 60px;
+  //   }
+
+  // }
+
+  // .containers-lineas {
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: absolute;
+
+  //   .talleres-container {
+  //     display: flex;
+  //     flex-direction: column;
+  //     position: static;
+  //     background-color: white;
+  //     color: #020101;
+  //     width: 350px;
+  //     padding: 10px 30px 20px 30px;
+  //     justify-content: center;
+  //     text-align: center;
+  //     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  //     border-radius: 20px;
+  //     z-index: 1;
+  //     margin: 250px 40px 0px 300px;
+
+  //     h2 {
+  //       color: #F17408;
+  //       font-weight: bolder;
+  //     }
+  //   }
+
+  //   .eventos-container{
+  //     position: static;
+  //     background-color: white;
+  //     color: rgb(2, 1, 1);
+  //     width: 350px;
+  //     padding: 10px 30px 40px 30px;
+  //     text-align: center;
+  //     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  //     border-radius: 20px;
+  //     margin-bottom: 20px;
+  //     margin: 70px 40px 0px 300px;
+
+  //     h2 {
+  //       color: #F17408;
+  //       font-weight: bolder;
+  //     }
+  //   }
+  //   .proyectos-container{
+  //     position: static;
+  //     background-color: white;
+  //     color: rgb(2, 1, 1);
+  //     width: 350px;
+  //     padding: 15px 30px 30px 30px;
+  //     text-align: center;
+  //     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  //     border-radius: 20px;
+  //     margin: 70px 40px 0px 300px;
+
+  //     h2 {
+  //       color: #F17408;
+  //       font-weight: bolder;
+  //     }
+  //   }
+
+  // }
+
+  // .links-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+
+  //   .link-novedades,
+  //   .link-historia,
+  //   .link-apoyanos {
+  //     a {
+  //       display: flex;
+  //       justify-content: center;
+  //       img {
+  //         display: flex;
+  //         width: 70%;
+  //         margin: 40px 0;
+  //         justify-content: center;
+
+  //         gap: 70px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .footer-container{
     background-color: black;
-
-    #background-image {
-      width: 100%;
-      filter: brightness(0.5);
-      height: 1050px;
-      
-      
-      
-    }
-
-    h1 {
-      font-size: 30px;
-      top: 60px;
-    }
-
+    font-family: "Roboto", sans-serif;
     
-  }
-
-  .containers-lineas {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-
-    .talleres-container {
-      position: static;
-      background-color: white;
-      color: #020101;
-      width: 350px;
-      padding: 10px 30px 20px 30px;
-      text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      z-index: 1;
-      margin: 250px 40px 0px 300px;
-      
-  
-      h2 {
-        color: #F17408;
-        font-weight: bolder;
-      }
-    }
-  
     
-    .eventos-container{
-      position: static;
-      background-color: white;
-      color: rgb(2, 1, 1);
-      width: 350px;
-      padding: 10px 30px 40px 30px;
-      text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      margin: 70px 40px 0px 300px;
-  
-      h2 {
-        color: #F17408;
-        font-weight: bolder;
+    .logos-contact{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+      padding: 20px;
+      font-size: small;
+    }
+    .logos{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 150px;
+        height: auto;
       }
     }
-    .proyectos-container{
-      position: static;
-      background-color: white;
-      color: rgb(2, 1, 1);
-      width: 350px;
-      padding: 15px 30px 30px 30px;
+    .contact{
+      color: white;
+      display: flex;
+      padding-left: 20px;
+      justify-content:space-around;
+      gap: 30px;
       text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      border-radius: 20px;
-      margin: 70px 40px 0px 300px;
-  
-      h2 {
-        color: #F17408;
-        font-weight: bolder;
-      }
-    }
-  
-  }
-  
-  .links-container {
-    flex-direction: column;
-
-    .link-novedades,
-    .link-historia,
-    .link-apoyanos {
-      a {
-        img {
-          width: 70%;
-          margin: 40px 0;
-          margin-left: 100px;
-          gap: 70px;
+    
+      .phone{
+        padding-top: 30px;
+        h4{
+          font-size: 10px;
+        }
+        h3{
+          font-size: 20px;
         }
       }
-    }
-  }
+      
 
-  .footer-container {
-    .logos-contact {
-      flex-direction: column;
-      align-items: center;
     }
-
-    .contact {
-      padding-left: 0;
+    .media{
+      padding-top: 30px;
+      h3{
+        font-size: 20px;
+      }
+      img{
+        width: 20px;
+        
+      }
     }
-
-    .derechos {
-      padding: 10px;
+    .email{
+      padding-top: 30px;
+      h3{
+        font-size: 20px;
+      }
+      h4{
+        font-size: 10px;
+      }
     }
-  }
+    .derechos{
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 10px;
+      
+    }
+ }
 }
-
-
-
-  
-  

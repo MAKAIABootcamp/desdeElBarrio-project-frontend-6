@@ -66,15 +66,17 @@ export const NavRoutes = () => {
             <Route path="History" element={<History />} />
             <Route path="Contacto" element={<Contacto />} />
             <Route path="Swiper" element={<Slider />} />
+            <Route path="Eventos" element={<Eventos />} />
+              <Route path="Talleres" element={<Talleres />} />
+              <Route path="Noticias" element={<Noticias />} />
 
             <Route element={<PublicRoutes isAuthenticate={isAuthenticate} />}>
               <Route path="Login" element={<Login />} />
               <Route path="register" element={<Register />} />
             </Route>
             <Route element={<PrivatedRoutes isAuthenticate={isAuthenticate} />}>
-              <Route path="Eventos" element={<Eventos />} />
-              <Route path="Talleres" element={<Talleres />} />
-              <Route path="Noticias" element={<Noticias />} />
+              
+              
               {user && user?.rol === "admin" ? (
                 <Route path="admin" element={<AdminPanel />} />
               ) : (

@@ -13,12 +13,15 @@ import Contacto from "../pages/contact/Contacto"
 // import { useAuth } from "../context/AuthContext";
 import PublicRoutes from "./PublicRoutes";
 import PrivatedRoutes from "./PrivatedRoutes";
-import History from "../pages/history/History";
-import AdminPanel from "../pages/adminPanel/AdminPanel";
+
 import { onAuthStateChanged } from "firebase/auth";
 import { setIsAuthenticate, setUser } from "../store/users/userSlice";
 import { auth } from "../firebase/firebase.config";
 import { getUserFromFirestoreAction } from "../store/users/userThunks";
+import History from "../pages/history/History";
+import AdminPanel from "../pages/adminPanel/AdminPanel";
+import { useAuth } from "../context/AuthContext";
+import Slider from "../components/Slider/Slider";
 
 export const NavRoutes = () => {
   // const auth = useAuth();
@@ -62,6 +65,8 @@ export const NavRoutes = () => {
             <Route path="Apoyanos" element={<Apoyanos />} />
             <Route path="History" element={<History />} />
             <Route path="Contacto" element={<Contacto />} />
+            <Route path="Swiper" element={<Slider />} />
+
             <Route element={<PublicRoutes isAuthenticate={isAuthenticate} />}>
               <Route path="Login" element={<Login />} />
               <Route path="register" element={<Register />} />

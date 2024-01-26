@@ -89,7 +89,7 @@ const NavBar = () => {
           {user && user?.rol === "admin" ? (
             <div className="apoyanos-container">
               <Link className="NavBar__link" to="/admin">
-                Pánel
+                Panel
               </Link>
             </div>
           ) : (

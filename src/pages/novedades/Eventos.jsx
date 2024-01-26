@@ -3,21 +3,25 @@ import "./Styles.scss";
 
 const events = [
   {
+    id:1,
     image: "https://c.animaapp.com/Zgqnbjdg/img/image-4@2x.png",
     title: "Batalla de Tags y batalla de Gallos!!",
     date: "20 de Diciembre",
   },
   {
+    id:2,
     image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-3@2x.png",
     title: "¡Se viene el segundo año del Festival Triple C!",
     date: "20 de Diciembre",
   },
   {
+    id:3,
     image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-2@2x.png",
     title: "Reconstrucción de memoria Barial",
     date: "1 de Agosto",
   },
   {
+    id:4,
     image: "https://c.animaapp.com/Zgqnbjdg/img/image-4-1@2x.png",
     title: "Cine Foro Ainbo",
     date: "13 de Noviembre",

@@ -25,7 +25,6 @@ const Noticias = () => {
 
   return (
     <div className="container">
-      <AddCards/>
       <div className="main-title">Noticias</div>
       <div className="catalog">
         {news.map((event, index) => (

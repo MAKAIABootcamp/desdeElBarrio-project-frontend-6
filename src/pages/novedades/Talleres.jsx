@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Styles.scss";
-import AddCards from '../../components/AdminForm/AddCards.jsx'
 import { getWorkshops, listenToWorkshops } from "../../firebase/firestoreCards.config";
 
 const Talleres = () => {
@@ -25,7 +24,6 @@ const Talleres = () => {
 
   return (
     <div className="container">
-      <AddCards/>
       <div className="main-title">Talleres</div>
       <div className="catalog">
         {workshops.map((event, index) => (

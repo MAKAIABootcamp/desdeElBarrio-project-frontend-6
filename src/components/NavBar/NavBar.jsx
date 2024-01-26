@@ -20,11 +20,18 @@ const NavBar = () => {
   const toggleNovedades = () => {
     setMostrarNovedades(!mostrarNovedades);
   };
+<<<<<<< HEAD
 
   const location = useLocation();
   console.log(location);
   function close() {
     setOpen(false);
+=======
+    
+  const location = useLocation()
+  function close() {
+      setOpen(false)
+>>>>>>> a1a3e7277fa73a59d18e7c16a14cebede0371d19
   }
 
   useEffect(() => {

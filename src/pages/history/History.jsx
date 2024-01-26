@@ -11,20 +11,15 @@ export const History = () => {
           <div className="rectangle" />
           <div className="noticias">Proyectos</div>
           <div className="slider-wrapper">
-              <Slider />
-            </div>
+            <Slider />
+          </div>
 
           <div className="rectangle-2" />
-          <img className="img-2" alt="Img" src="https://c.animaapp.com/0sp9g4x4/img/img.png" />
+          <img className="img-2" alt="Img" src="https://res.cloudinary.com/dyuf3v9mb/image/upload/v1706244768/img_eqemp6.png" />
           <div className="container-main-title" />
           <div className="main-title">Nuestra Historia</div>
           <img className="container-text" alt="Rectangle" src="https://c.animaapp.com/0sp9g4x4/img/rectangle-31.svg" />
-          <p className="text-wrapper-1">
-            Actualmente la organización ha dejado de ser un colectivo social y se ha establecido legalmente como una
-            entidad sin ánimo de lucro, con el fin de ampliar los horizontes de acción y trabajo comunitario. Además, se
-            busca consolidar la viabilidad financiera y la sostenibilidad económica de la Corporación, con miras a
-            posicionar a Desde el Barrio como un actor importante de ciudad, con incidencia en lo público y lo privado.
-          </p>
+
           <p className="text-wrapper-2">
             Entre estos procesos se pueden destacar principalmente la construcción de la primera biblioteca comunitaria
             del barrio Caunces de Oriente, ciclos de cine, foros, festivales, tomas culturales en espacios

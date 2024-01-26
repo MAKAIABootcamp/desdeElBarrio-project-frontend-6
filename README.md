@@ -1,6 +1,7 @@
 # Desde el Barrio website
 
-![WhatsApp Image 2023-12-11 at 11 33 26 PM (2)](https://github.com/MAKAIABootcamp/desdeElBarrio-project-frontend-6/assets/138082640/7eae7a94-2bdf-421f-92ec-343a804ed66d)
+![Texto alternativo](https://github.com/MAKAIABootcamp/desdeElBarrio-project-frontend-6/assets/138082640/7eae7a94-2bdf-421f-92ec-343a804ed66d)
+
 
 
 

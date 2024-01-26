@@ -3,7 +3,7 @@
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { firestore } from '../firebase/firebase.config'
 
-const collectionName = 'users'
+const collectionName = 'user'
 
 export const createUserInCollection = async ( uid, newUser ) => {
   try {

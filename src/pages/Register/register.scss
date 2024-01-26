@@ -14,7 +14,49 @@ $color-texto: #000000;
   background-size: cover;
   /* filter: brightness(0.7); */
   
+.container-avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+  /* TuArchivoDeEstilos.css */
 
+.upload-button {
+  padding: 10px;
+  background-color: #F17408;
+  color: white;
+  border: 1px solid #F17408;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #F17408;
+  border: 1px solid #F17408;
+}
+
+.upload-button:focus {
+  outline: none; /* Elimina el contorno predeterminado al enfocar el elemento */
+  box-shadow: 0 0 5px #F17408; /* Agrega una sombra al enfocar el elemento */
+}
+
+/* Estilo adicional para mostrar que se ha seleccionado un archivo */
+.upload-button:type {
+  border-color: #F17408;
+  color: #F17408;
+}
+
+  
+  
+ 
+}
   .container-forms{
     background-color: rgba(255, 255, 255, 0.495);
     border-radius: 20px;

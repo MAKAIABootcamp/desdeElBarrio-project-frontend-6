@@ -1,0 +1,114 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .admin-section {
+    margin: 20px 0;
+  }
+  
+  .admin-section {
+    background: url('../../images/admin-background.jpg') center center fixed;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .admin-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .admin-item strong {
+    font-weight: bold;
+  }
+  
+  .admin-options {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .admin-option {
+    text-align: center;
+    width: 30%;
+    margin: 20px 0;
+  }
+  
+  .admin-option img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .admin-section {
+      padding: 20px 0;
+    }
+  
+    .admin-item {
+      width: calc(100% - 20px);
+    }
+  
+    .admin-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+  
+      .admin-option {
+        width: calc(100% - 20px);
+  
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+  
+        h3 {
+          margin-top: 10px;
+        }
+  
+        .admin-form {
+          label,
+          input,
+          textarea,
+          button,
+          select {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+  
+          button {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  

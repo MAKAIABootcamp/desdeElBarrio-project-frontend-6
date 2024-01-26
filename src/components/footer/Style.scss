@@ -1,0 +1,36 @@
+.footer-container{
+    background-color: black;
+    .logos-contact{
+      display: flex;
+      justify-content:space-around;
+      padding: 20px;
+    }
+    .logos{
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      img{
+        width:190px;
+        height: 130px;
+      }
+    }
+    .contact{
+      color: white;
+      display: flex;
+      padding-left: 100px;
+      justify-content:space-around;
+      gap: 50px;
+      text-align: center;
+    
+    }
+    .media{
+      img{
+        width: 40px;
+      }
+    }
+    .derechos{
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+ }

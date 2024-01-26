@@ -1,0 +1,176 @@
+.seccin-historia {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.seccin-historia .div {
+  background-color: #000000;
+  height: 2030px;
+  overflow: hidden;
+  position: relative;
+  width: 1492px;
+  border-radius: 20px;
+}
+
+.seccin-historia .overlap-group {
+  height: 1576px;
+  left: -13px;
+  position: absolute;
+  top: 10px;
+  width: 1421px;
+}
+
+.seccin-historia .rectangle {
+  background-color: #ffffff;
+  height: 1293px;
+  left: 0;
+  position: absolute;
+  top: 783px;
+  width: 1521px;
+}
+
+.seccin-historia .img {
+  background-blend-mode: darken;
+  height: 722px;
+  left: 466px;
+  object-fit: cover;
+  position: absolute;
+  top: 1069px;
+  width: 686px;
+}
+
+.seccin-historia .noticias {
+  color: #f17408;
+  font-family: "Lexend", Helvetica;
+  font-size: 72px;
+  font-weight: 800;
+  left: 592px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 957px;
+  white-space: nowrap;
+}
+
+.seccin-historia .rectangle-2 {
+  background-color: #171a1fa1;
+  height: 86px;
+  left: 381px;
+  position: absolute;
+  top: 67px;
+  width: 714px;
+}
+
+.seccin-historia .img-2 {
+  height: 901px;
+  left: 13px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 1492px;
+}
+
+.seccin-historia .container-main-title {
+  background-color: #171a1fad;
+  height: 897px;
+  left: 13px;
+  position: absolute;
+  top: 0;
+  width: 1492px;
+}
+
+.seccin-historia .main-title {
+  color: #f17408;
+  font-family: "Lexend", Helvetica;
+  font-size: 72px;
+  font-weight: 800;
+  left: 428px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 84px;
+  white-space: nowrap;
+}
+
+.seccin-historia .container-text {
+  height: 570px;
+  left: 269px;
+  position: absolute;
+  top: 180px;
+  width: 950px;
+  opacity: 0.8;
+}
+
+.seccin-historia .text-wrapper-1 {
+  color: #000000;
+  font-family: "Lexend", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 325px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 576px;
+  width: 858px;
+}
+
+.seccin-historia .text-wrapper-2 {
+  color: #000000;
+  font-family: "Lexend", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 313px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 397px;
+  width: 858px;
+}
+
+.seccin-historia .text-wrapper-3 {
+  color: #000000;
+  font-family: "Lexend", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 306px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 228px;
+  width: 868px;
+}
+
+//OTROS VISUALIZACIONES
+.seccin-historia .btn-group{
+  height: 107px;
+  width: 409px;
+ 
+}
+
+
+.seccin-historia .Btn-portfolio {
+  color: #ffffff;
+  font-family: "Lexend", Helvetica;
+  font-size: 34px;
+  font-weight: 600;
+  left: 583px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 1866px;
+  width: 351px;
+  height: 35px;
+  background-color: #f17408;
+  text-decoration: none;
+  border-radius: 20px;
+ 
+}
